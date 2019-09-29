@@ -1,3 +1,3 @@
 image: Visual Studio 2019 Preview
-build_script:
-- cmd: dotnet build
+before_build:
+  - nuget restore
