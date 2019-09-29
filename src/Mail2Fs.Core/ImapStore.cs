@@ -36,7 +36,7 @@ namespace MailSync
         public IEnumerable<int> List()
         {
             string response = Imap.Send(ssl, "$ UID SEARCH ALL");
-            var list = response.Split(Environment.NewLine)
+            var list = response.Split(new[] { Environment.NewLine }, StringSplitOptions.None)
                                .First()
                                .Split(' ')
                                .Skip(2)

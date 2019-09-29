@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Text;
 
 namespace MailSync
@@ -9,12 +9,12 @@ namespace MailSync
         {
             StringBuilder stringBuilder = new StringBuilder();
 
-            using (StreamWriter writer = new StreamWriter(stream, leaveOpen: true))
+            using (StreamWriter writer = new StreamWriter(stream, Encoding.Default, 100, leaveOpen: true))
             {
                 writer.WriteLine(command);
             }
 
-            using (StreamReader reader = new StreamReader(stream, leaveOpen: true))
+            using (StreamReader reader = new StreamReader(stream, Encoding.Default, detectEncodingFromByteOrderMarks: false, 100, leaveOpen: true))
             {
                 string response;
 
