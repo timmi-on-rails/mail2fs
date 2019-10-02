@@ -1,3 +1,4 @@
 image: Visual Studio 2019 Preview
 before_build:
+  - 7z x -oC:\ vsto\vsto-pack.zip
   - nuget restore
