@@ -2,10 +2,12 @@ image: Visual Studio 2019 Preview
 environment:
   pfxpass:
     secure: k0RfnYdodhLF5PQb7Oqjpw==
+  test:
+    secure: +A5AB0TkA3YJiBAx/A5oPg==
 build:
   publish_core_console: true
   verbosity: minimal
 before_build:
-  - certutil -user -p "" -importpfx src\Mail2Fs.Outlook\Mail2Fs.Outlook_TemporaryKey.pfx NoRoot
+  - certutil -user -p "$env:test" -importpfx src\Mail2Fs.Outlook\Mail2Fs.Outlook_TemporaryKey.pfx NoRoot
   - 7z x -oC:\ vsto\vsto-pack.zip
   - nuget restore
