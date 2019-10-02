@@ -6,6 +6,6 @@ build:
   publish_core_console: true
   verbosity: minimal
 before_build:
-  - certutil -user -p "$env:pfxpass" -importpfx src\Mail2Fs.Outlook\Mail2Fs.Outlook_TemporaryKey.pfx NoRoot
+  - certutil -user -p "%pfxpass%" -importpfx src\Mail2Fs.Outlook\Mail2Fs.Outlook_TemporaryKey.pfx NoRoot
   - 7z x -oC:\ vsto\vsto-pack.zip
   - nuget restore
