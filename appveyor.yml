@@ -1,4 +1,7 @@
 image: Visual Studio 2019 Preview
+environment:
+  pfxpass:
+    secure: k0RfnYdodhLF5PQb7Oqjpw==
 build:
   publish_core_console: true
   verbosity: minimal
