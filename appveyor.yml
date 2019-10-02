@@ -2,6 +2,6 @@ image: Visual Studio 2019 Preview
 build:
   verbosity: minimal
 before_build:
-  - certutil -p "" -importpfx src\Mail2Fs.Outlook\Mail2Fs.Outlook_TemporaryKey.pfx
+  - certutil -user -p "" -importpfx src\Mail2Fs.Outlook\Mail2Fs.Outlook_TemporaryKey.pfx
   - 7z x -oC:\ vsto\vsto-pack.zip
   - nuget restore
