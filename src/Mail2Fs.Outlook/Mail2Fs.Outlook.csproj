@@ -231,7 +231,7 @@
     <ManifestKeyFile>Mail2Fs.Outlook_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>7605C1791B7D5ACE462CD2FCE3303ABC0C8385B5</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>D59ACB9542897AB0FBDD68553DD6F1372A69D28F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
