@@ -1,6 +1,9 @@
 set ZIP_EXE=C:\Program Files\7-Zip\7z.exe
+set ARCHIVE=vsto-pack.zip
 
-"%ZIP_EXE%" a vsto-pack.zip -spf2 @list.txt
+del "%ARCHIVE%"
+"%ZIP_EXE%" a "%ARCHIVE%" "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets"
+"%ZIP_EXE%" rn "%ARCHIVE%" "Microsoft.VisualStudio.Tools.Office.targets" "Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VisualStudio\v16.0\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets"
 exit
 "%ZIP_EXE%" a vsto-pack.zip "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets"
 exit
