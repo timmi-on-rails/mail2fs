@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mail2Fs.Cli", "src\Mail2Fs.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mail2Fs.Core", "src\Mail2Fs.Core\Mail2Fs.Core.csproj", "{753EC58B-08A6-4F76-AB63-D593CAF0CB98}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mail2Fs.Windows", "src\Mail2Fs.Windows\Mail2Fs.Windows.csproj", "{DEADB1CB-C9BF-4A79-9952-CA584D730899}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail2Fs.Outlook", "src\Mail2Fs.Outlook\Mail2Fs.Outlook.csproj", "{6EEC23A8-4FE2-4D0C-88A0-8B43C887D4B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail2Fs.Windows", "src\Mail2Fs.Windows\Mail2Fs.Windows.csproj", "{58064E29-9AE3-4BA9-8C9E-2F292B657D12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{753EC58B-08A6-4F76-AB63-D593CAF0CB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{753EC58B-08A6-4F76-AB63-D593CAF0CB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{753EC58B-08A6-4F76-AB63-D593CAF0CB98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEADB1CB-C9BF-4A79-9952-CA584D730899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEADB1CB-C9BF-4A79-9952-CA584D730899}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEADB1CB-C9BF-4A79-9952-CA584D730899}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEADB1CB-C9BF-4A79-9952-CA584D730899}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6EEC23A8-4FE2-4D0C-88A0-8B43C887D4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6EEC23A8-4FE2-4D0C-88A0-8B43C887D4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEC23A8-4FE2-4D0C-88A0-8B43C887D4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEC23A8-4FE2-4D0C-88A0-8B43C887D4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58064E29-9AE3-4BA9-8C9E-2F292B657D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58064E29-9AE3-4BA9-8C9E-2F292B657D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58064E29-9AE3-4BA9-8C9E-2F292B657D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58064E29-9AE3-4BA9-8C9E-2F292B657D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
