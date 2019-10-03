@@ -4,10 +4,28 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
+    <!-- We use WinForms for the NotifyIcon class. (Minimize to tray) -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Mail2Fs.Core\Mail2Fs.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Mail2FsResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mail2FsResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Mail2FsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mail2FsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
